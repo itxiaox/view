@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="province_line_border">#C7C7C7</color>
+    <drawable name="transparent_background">#00000000</drawable>
+     <!-- 本程序基调 -->
+    <!-- activity的背景 -->
+    <color name="bg_activity">#f1f1f0</color>
+ <!-- 常用颜色 -->
+      <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 红色 -->
+    <color name="bg_red">#ff6f60</color>
+    <!-- 绿色 -->
+    <color name="bg_green">#00ce79</color>
+    <!-- 灰绿 -->
+    <color name="bg_g_green">#89dacb</color>
+    <!-- 蓝色 -->
+    <color name="bg_blue">#69aeef</color>
+    <!-- 黄色 -->
+    <color name="bg_yellow">#fed50b</color>
+    <!-- 灰色 -->
+    <color name="bg_grey">#929292</color>
+    <!-- 灰色 -->
+    <color name="bt_grey">#dedede</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+
+
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <!-- 字体的灰色 -->
+    <color name="font_grey">#929292</color>
+    <!-- 字体的红色 -->
+    <color name="font_red">#ff6f60</color>
+    <!-- 字体的默认黑 -->
+    <color name="font_black">#2F2F2F</color>
+    <!-- 字体的默认白 -->
+    <color name="font_white">#ffffff</color>
+    <!-- 字体的默认白 -->
+    <color name="font_hint_grey">#bcbcbc</color>
+    <!-- listview的分割线 -->
+    <color name="listitem_line">#ececec</color>
+
+    <!--仿IOS对话框-->
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+</resources>

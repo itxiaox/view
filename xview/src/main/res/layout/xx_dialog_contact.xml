@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_splash_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/xx_search_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="常用城市"
+            android:textColor="@color/bg_grey"
+            android:textSize="@dimen/font4" />
+
+        <GridView
+            android:id="@+id/gridview_choosecity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@null"
+            android:numColumns="5" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flay_contact_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1000" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:fastScrollEnabled="false" />
+
+        <com.itxiaox.xview.addressDialog.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:maxHeight="70dip"
+            android:maxWidth="70dip"
+            android:minHeight="70dip"
+            android:minWidth="70dip"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_dialogcalendar_sure"
+        style="@style/btn_commont"
+        android:layout_weight="1"
+        android:text="确定" />
+
+</LinearLayout>
