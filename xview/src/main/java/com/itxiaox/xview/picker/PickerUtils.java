@@ -17,6 +17,7 @@ import com.itxiaox.xview.picker.slidedatetimepicker.SlideDateTimePicker;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 
 public class PickerUtils extends FragmentActivity{
@@ -68,7 +69,7 @@ public class PickerUtils extends FragmentActivity{
           {
 //              Toast.makeText(context,
 //            		  date.toString(), Toast.LENGTH_SHORT).show();
-    		  textView.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date));
+    		  textView.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(date));
           }
 
           // Optional cancel listener

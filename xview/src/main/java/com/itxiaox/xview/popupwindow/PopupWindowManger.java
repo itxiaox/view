@@ -20,18 +20,18 @@ import java.util.List;
 
 public class PopupWindowManger {
 
-    public interface PopuWindowListener {
-        public void onDismiss(PopupWindow popupWindow);
+    public interface PopupWindowListener {
+         void onDismiss(PopupWindow popupWindow);
 
-        public void onItemClick(PopupWindow popupWindow, AdapterView<?> parent,
+         void onItemClick(PopupWindow popupWindow, AdapterView<?> parent,
                                 View view, int position, long id);
     }
 
     /**
      * 带箭头的下拉菜单
      */
-    public static PopupWindow showPopupWindowStyle1(Context context,
-                                                    List<String> datas, final PopuWindowListener popuWindowListener) {
+    public static PopupWindow showPopupWindow(Context context,
+                                                    List<String> datas, final PopupWindowListener popupWindowListener) {
         LayoutInflater inflater = LayoutInflater.from(context);
         // 引入窗口配置文件
         View view = inflater.inflate(R.layout.xx_popupwindow_spinner, null);
@@ -48,15 +48,11 @@ public class PopupWindowManger {
         // 设置此参数获得焦点，否则无法点击
         popupWindow.setFocusable(true);
         // 设置pop消失监听
-        popupWindow.setOnDismissListener(new OnDismissListener() {
-            @Override
-            public void onDismiss() {
-                if (popuWindowListener != null) {
-                    popuWindowListener.onDismiss(popupWindow);
-                }
+        popupWindow.setOnDismissListener(() -> {
+            if (popupWindowListener != null) {
+                popupWindowListener.onDismiss(popupWindow);
             }
         });
-
         CommonAdapter<String> adapter = new CommonAdapter<String>(context,
                 datas, R.layout.xx_item_popupwindowstyle1) {
 
@@ -66,15 +62,10 @@ public class PopupWindowManger {
             }
         };
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-                                    long arg3) {
-                if (popuWindowListener != null) {
-                    popuWindowListener.onItemClick(popupWindow, arg0, arg1,
-                            arg2, arg3);
-                }
+        listView.setOnItemClickListener((arg0, arg1, arg2, arg3) -> {
+            if (popupWindowListener != null) {
+                popupWindowListener.onItemClick(popupWindow, arg0, arg1,
+                        arg2, arg3);
             }
         });
         return popupWindow;

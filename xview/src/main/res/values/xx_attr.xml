@@ -101,4 +101,17 @@
         <attr name="android:src" />
         <attr name="android:orientation"/>
     </declare-styleable>
+
+    <!--BatterView 属性-->
+    <declare-styleable name="BatteryView">
+        <attr name="battery_color" format="color"/>
+        <attr name="battery_left" format="dimension"/>
+        <attr name="battery_top" format="dimension"/>
+        <attr name="battery_width" format="dimension"/>
+        <attr name="battery_height" format="dimension"/>
+        <attr name="battery_head_width" format="dimension"/>
+        <attr name="battery_head_height" format="dimension"/>
+        <attr name="battery_inside_margin" format="dimension"/>
+        <attr name="battery_stroke_width" format="dimension"/>
+    </declare-styleable>
 </resources>

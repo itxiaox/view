@@ -18,9 +18,9 @@ package com.itxiaox.xview.picker.address;
 
 /**
  * Wheel changed listener interface.
- * <p>The onChanged() method is called whenever current wheel positions is changed:
- * <li> New Wheel position is set
- * <li> Wheel view is scrolled
+ * The onChanged() method is called whenever current wheel positions is changed:
+ *  New Wheel position is set
+ *  Wheel view is scrolled
  */
 public interface OnWheelChangedListener {
 	/**

@@ -1,6 +1,7 @@
 package com.itxiaox.xview.webview;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -133,7 +134,8 @@ public class LoadingWebView extends RelativeLayout{
 		mWebView.getSettings().setJavaScriptEnabled(value);
 	}
 	
-	public void addJavascriptInterface(Object object,String name){
+	@SuppressLint("JavascriptInterface")
+	public void addJavascriptInterface(Object object, String name){
 		mWebView.addJavascriptInterface(object,name);
 	}
 	

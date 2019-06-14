@@ -64,8 +64,6 @@ public class DateFragment extends Fragment
     /**
      * Return an instance of DateFragment with its bundle filled with the
      * constructor arguments. The values in the bundle are retrieved in
-     * {@link #onCreateView()} below to properly initialize the DatePicker.
-     *
      * @param theme
      * @param year
      * @param month

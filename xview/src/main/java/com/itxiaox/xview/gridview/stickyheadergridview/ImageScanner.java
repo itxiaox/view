@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
 
+
 public class ImageScanner {
 	private Context mContext;
 	
@@ -18,6 +19,7 @@ public class ImageScanner {
 	/**
 	 * 利用ContentProvider扫描手机中的图片，此方法在运行在子线程中
 	 */
+
 	public void scanImages(final ScanCompleteCallBack callback) {
 		final Handler mHandler = new Handler() {
 

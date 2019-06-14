@@ -21,6 +21,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
@@ -104,7 +105,7 @@ public class IOSAlbumActivity extends Activity {
 		System.setProperty("user.timezone", "Asia/Shanghai");
 		TimeZone tz = TimeZone.getTimeZone("Asia/Shanghai");
 		TimeZone.setDefault(tz);
-		SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日", Locale.getDefault());
 		return format.format(new Date(time * 1000L));
 	}
 

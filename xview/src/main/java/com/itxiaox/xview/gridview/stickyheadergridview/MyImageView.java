@@ -1,9 +1,11 @@
 package com.itxiaox.xview.gridview.stickyheadergridview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+@SuppressLint("AppCompatCustomView")
 public class MyImageView extends ImageView {
 	private OnMeasureListener onMeasureListener;
 	

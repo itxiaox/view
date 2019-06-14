@@ -66,8 +66,6 @@ public class TimeFragment extends Fragment
     /**
      * Return an instance of TimeFragment with its bundle filled with the
      * constructor arguments. The values in the bundle are retrieved in
-     * {@link #onCreateView()} below to properly initialize the TimePicker.
-     *
      * @param theme
      * @param hour
      * @param minute

@@ -80,12 +80,12 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
-        ViewHolder holder = ViewHolder.get(mContext, convertView, parent,
+    public View getView(final int position, View view, ViewGroup parent) {
+        ViewHolder holder = ViewHolder.get(mContext, view, parent,
                 layoutId, position);
         convert(holder, getItem(position));
-        View converView = holder.getConvertView();
-        converView.setOnClickListener(v -> {
+        View convertView = holder.getConvertView();
+        convertView.setOnClickListener(v -> {
             if (onClickListener != null) {
                 onClickListener.onClick(position, mDatas.get(position));
             }

@@ -1,4 +1,5 @@
 package com.itxiaox.xview.imageView;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -21,6 +22,7 @@ import com.itxiaox.xview.R;
  * @date 2014-12-5 上午9:28:28 
  *
  */
+@SuppressLint("AppCompatCustomView")
 public class RoundAngleImageView extends ImageView {
     private Paint paint;
     private int roundWidth = 5;

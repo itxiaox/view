@@ -28,6 +28,7 @@ import android.widget.TextView;
  * @Description: TODO
  * @date modify by 2015-9-21 下午4:51:12
  */
+@SuppressWarnings("unchecked")
 public class ViewHolder {
     private SparseArray<View> mViews;
     private int mPosition;

@@ -12,8 +12,6 @@ import android.widget.ProgressBar;
   
 /**
  * 带文字的进度的进度条
- * @ClassName: NumberProgress 
- * @Description: TODO
  * @author xiaoxiao
  * @date 2015-5-14 下午5:58:28 
  *
@@ -93,7 +91,6 @@ public class NumberProgressBar1 extends ProgressBar{
         }
          
 		/**
-	     * @Description: TODO
 	     * @param context
 	     * @return
 	     * @return float
@@ -105,7 +102,6 @@ public class NumberProgressBar1 extends ProgressBar{
 	    }
 
 	    /**
-	     * @Description: TODO
 	     * @param context
 	     * @return
 	     * @return float

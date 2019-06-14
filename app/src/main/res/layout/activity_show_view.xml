@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itxiaox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowViewActivity">
+
+    <com.itxiaox.xview.view.BatteryView
+        android:id="@+id/bv_battery"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="0dp"
+        itxiaox:battery_height="10dp"
+        itxiaox:battery_top="5dp"
+        itxiaox:battery_left="5dp"
+        itxiaox:battery_head_height="5dp"
+        itxiaox:battery_head_width="2dp"
+        itxiaox:battery_width="20dp"
+        itxiaox:battery_inside_margin="1dp"
+        itxiaox:battery_stroke_width="1dp"
+        itxiaox:battery_color="@color/font_grey"/>
+</LinearLayout>

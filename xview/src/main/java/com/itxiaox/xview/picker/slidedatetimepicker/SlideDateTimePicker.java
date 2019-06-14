@@ -155,7 +155,6 @@ public class SlideDateTimePicker
 
     /**
      * Shows the dialog to the user. Make sure to call
-     * {@link #setListener()} before calling this.
      */
     public void show()
     {
