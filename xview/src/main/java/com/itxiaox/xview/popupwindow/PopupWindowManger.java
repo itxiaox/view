@@ -12,8 +12,8 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.PopupWindow.OnDismissListener;
 
-import com.itxiaox.xview.adapter.CommonAdapter;
-import com.itxiaox.xview.adapter.ViewHolder;
+import com.github.itxiaox.adapter.listview.CommonAdapter;
+import com.github.itxiaox.adapter.listview.ViewHolder;
 import com.itxiaox.xview.R;
 
 import java.util.List;

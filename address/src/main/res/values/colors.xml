@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- listview的分割线 -->
+    <color name="listitem_line">#ececec</color>
+    <!-- 字体的灰色 -->
+    <color name="font_grey">#929292</color>
+    <color name="province_line_border">#C7C7C7</color>
+</resources>

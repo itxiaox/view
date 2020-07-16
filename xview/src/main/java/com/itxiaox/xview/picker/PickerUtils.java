@@ -2,13 +2,12 @@ package com.itxiaox.xview.picker;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.itxiaox.xview.picker.addresspicker.AddressPicker;
 import com.itxiaox.xview.picker.datepicker.DatePicker;
 import com.itxiaox.xview.picker.datepicker.DatePicker2;
 import com.itxiaox.xview.picker.datepicker.TimePicker;
@@ -51,17 +50,14 @@ public class PickerUtils extends FragmentActivity{
 		 timPicker.selectTimeDialog(textview);
 	}
 	
-	public static void addressPicker(Context context,TextView textView){
-		AddressPicker addressPicker = new AddressPicker();
-		addressPicker.selectAddressDialog(context,textView);
-	}
 	/**
 	 * 时间日期选择器，注意使用此方法时候，调用此方法的Activity必须继承FragmentActivity
 	 * @param context
 	 * @param textView
 	 */
 	public static void DateTimePicker(final Context context,final TextView textView){
-	    new SlideDateTimePicker.Builder(((FragmentActivity) context).getSupportFragmentManager())
+	    new SlideDateTimePicker.Builder(((FragmentActivity) context)
+				.getSupportFragmentManager())
       .setListener(new SlideDateTimeListener() {
 		
     	  @Override

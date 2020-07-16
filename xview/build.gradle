@@ -1,14 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 android {
-    compileSdkVersion 27
+    compileSdkVersion 29
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
 
@@ -28,17 +27,19 @@ android {
         abortOnError false
         checkReleaseBuilds false
         warningsAsErrors false
-
         disable 'GoogleAppIndexingWarning'
     }
+
 }
 
 dependencies {
-    //todo 这里引用了appcompat，在其它的项目中引用另外的appcompat，两个版本不一致，造成冲突
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation project(path: ':adapter')
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
 allprojects {
@@ -53,20 +54,4 @@ allprojects {
         }
     }
 }
-
-//添加
-//noinspection SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection,SpellCheckingInspection
-publish {
-    repoName = 'android'           //bintray仓库名
-    userOrg = 'itxiaox'//bintray.com用户名 -bintray注册的用户名
-    groupId = 'com.itxiaox'//jcenter上的路径 compile引用时的第1部分groupId
-    artifactId = 'xview'//项目名称  compile引用时的第2部分项目名
-    publishVersion = '0.1.0'// compile引用时的第3部分版本号
-    desc = '初始上传，不太稳定版本'
-    website = 'https://github.com/itxiaox/XView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
-
-    //上传命令
-    //gradlew clean build bintrayUpload  -PbintrayUser=itxiaox -PbintrayKey=c158d4fea06de14df4ef28d6a479a56474c709d6 -PdryRun=false
-    //clean build generatePomFileForReleasePublication releaseAndroidJavadocs releaseAndroidJavadocsJar releaseAndroidSourcesJar publishReleasePublicationToMavenLocal
-    //bintrayUpload -PbintrayUser=bintray user -PbintrayKey=c158d4fea06de14df4ef28d6a479a56474c709d6 -PdryRun=false
-}
+apply from :"../publishAndroidLib.gradle"

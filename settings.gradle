@@ -1,1 +1,4 @@
-include  ':app',':xview'
+include ':address'
+include  ':app'
+include ':xview'
+include ':adapter'

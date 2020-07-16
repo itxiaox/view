@@ -35,7 +35,7 @@ public class ImageTextView extends LinearLayout {
     private TextView textView; // 标题文字
     private ImageView renewalImg; // 更新图片 (eg:通知提示) 注：更新图片和更新文字，只能二选一
     private TextView renewalTv; // 更新内容 （eg:购物车右上的数字）
-    @android.support.annotation.IdRes
+    @androidx.annotation.IdRes
     int IMAGEVIEW_ID; // 图片的id，用于与右边的图片绑定
 
     /**
