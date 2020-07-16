@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+        <declare-styleable name="NumberProgressBar2">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+     <!-- ===========================自定义imageview=========================-->
+	<!-- 自定义圆角图像属性 -->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+    <!-- ===========================进度条=========================-->
+    <declare-styleable name="CircleProgress">
+        <attr name="circle_progress" format="integer"/>
+        <attr name="circle_max" format="integer"/>
+
+        <attr name="circle_unfinished_color" format="color"/>
+        <attr name="circle_finished_color" format="color"/>
+
+        <attr name="circle_text_size" format="dimension"/>
+        <attr name="circle_text_color" format="color"/>
+
+        <attr name="circle_prefix_text" format="string"/>
+        <attr name="circle_suffix_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_progress" format="integer"/>
+        <attr name="donut_max" format="integer"/>
+
+        <attr name="donut_unfinished_color" format="color"/>
+        <attr name="donut_finished_color" format="color"/>
+
+        <attr name="donut_finished_stroke_width" format="dimension"/>
+        <attr name="donut_unfinished_stroke_width" format="dimension"/>
+
+        <attr name="donut_text_size" format="dimension"/>
+        <attr name="donut_text_color" format="color"/>
+
+        <attr name="donut_prefix_text" format="string"/>
+        <attr name="donut_suffix_text" format="string"/>
+
+        <attr name="donut_background_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+
+        <attr name="arc_text_size" format="dimension"/>
+        <attr name="arc_text_color" format="color"/>
+
+        <attr name="arc_suffix_text" format="string"/>
+        <attr name="arc_suffix_text_size" format="dimension"/>
+        <attr name="arc_suffix_text_padding" format="dimension"/>
+
+        <attr name="arc_bottom_text" format="string"/>
+        <attr name="arc_bottom_text_size" format="dimension"/>
+    </declare-styleable>
+  <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="circleProgressStyle" format="reference"/>
+        <attr name="donutProgressStyle" format="reference"/>
+        <attr name="arcProgressStyle" format="reference"/>
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="android:text" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:background" />
+        <attr name="android:src" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+
+    <!--BatterView 属性-->
+    <declare-styleable name="BatteryView">
+        <attr name="battery_color" format="color"/>
+        <attr name="battery_left" format="dimension"/>
+        <attr name="battery_top" format="dimension"/>
+        <attr name="battery_width" format="dimension"/>
+        <attr name="battery_height" format="dimension"/>
+        <attr name="battery_head_width" format="dimension"/>
+        <attr name="battery_head_height" format="dimension"/>
+        <attr name="battery_inside_margin" format="dimension"/>
+        <attr name="battery_stroke_width" format="dimension"/>
+    </declare-styleable>
+</resources>

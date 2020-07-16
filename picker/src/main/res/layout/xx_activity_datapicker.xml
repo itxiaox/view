@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-10dp"
+    android:layout_marginRight="-10dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/listitem_line"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#037BFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_datapicker_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择"
+            android:textColor="@color/font_grey"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#037BFF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.github.itxiaox.picker.datapicker.WheelView
+            android:id="@+id/id_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"></com.github.itxiaox.picker.datapicker.WheelView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

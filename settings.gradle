@@ -1,4 +1,7 @@
+include ':picker'
+include ':progressbar'
+include ':dialog'
 include ':address'
 include  ':app'
-include ':xview'
+include ':view'
 include ':adapter'

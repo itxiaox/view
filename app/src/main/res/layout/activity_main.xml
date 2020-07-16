@@ -4,12 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#00ff00"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="进度条" />
 
+    <TextView
+        android:id="@+id/tv_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#00ff00"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="对话框" />
+    <TextView
+        android:id="@+id/tv_input_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#00ff00"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="输入对话框" />
     <TextView
         android:id="@+id/tv_select1"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:background="#00ff00"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="选择日期" />
 

@@ -17,9 +17,9 @@ buildscript {
 allprojects {
 
     repositories {
+        maven { url 'https://jitpack.io' }
         google()
         jcenter()
-        maven { url "https://dl.bintray.com/itxiaox/android"}
     }
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
