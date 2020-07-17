@@ -1,6 +1,6 @@
 #  自定义View库
 
-收录整理常用的各种UI控件，自定义view
+收录整理常用的各种UI控件、自定义view、用于项目实践中。
 
 
 [![](https://jitpack.io/v/itxiaox/view.svg)](https://jitpack.io/#itxiaox/view)
