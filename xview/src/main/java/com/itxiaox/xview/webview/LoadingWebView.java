@@ -40,7 +40,7 @@ public class LoadingWebView extends RelativeLayout{
 	private RelativeLayout progressBar_circle = null;  //包含圆形进度条的布局
 	private int barHeight = 8;  //水平进度条的高
 	private boolean isAdd = false;  //判断是否已经加入进度条
-	private int progressStyle = Horizontal;  //进度条样式,Circle表示为圆形，Horizontal表示为水平
+	private int progressStyle = Circle;  //进度条样式,Circle表示为圆形，Horizontal表示为水平
 	
 
 	

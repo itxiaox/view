@@ -1,3 +1,4 @@
+rootProject.name = "view"
 include ':menu'
 include ':picker'
 include ':progressbar'

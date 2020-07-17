@@ -15,6 +15,23 @@
         android:text="进度条" />
 
     <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ff00"
+        android:gravity="center"
+        android:text="自定义view" />
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ff00"
+        android:gravity="center"
+        android:text="菜单" />
+    <TextView
         android:id="@+id/tv_dialog"
         android:layout_width="match_parent"
         android:layout_height="30dp"
@@ -77,27 +94,7 @@
         android:gravity="center"
         android:text="picker地址选择" />
 
-    <TextView
-        android:id="@+id/tv_select4"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="#00ff00"
-        android:drawableRight="@drawable/xx_arrow_down"
-        android:gravity="center"
-        android:paddingRight="10dp"
-        android:text="下拉列表" />
 
-    <TextView
-        android:id="@+id/tv_select5"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="#00ff00"
-        android:drawableRight="@drawable/xx_arrow_down"
-        android:gravity="center"
-        android:paddingRight="10dp"
-        android:text="下拉列表2" />
 
     <TextView
         android:id="@+id/tv_select6"

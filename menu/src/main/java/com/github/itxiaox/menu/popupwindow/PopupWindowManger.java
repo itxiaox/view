@@ -1,4 +1,4 @@
-package com.itxiaox.xview.popupwindow;
+package com.github.itxiaox.menu.popupwindow;
 
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
@@ -7,14 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.PopupWindow;
-import android.widget.PopupWindow.OnDismissListener;
+
 
 import com.github.itxiaox.adapter.listview.CommonAdapter;
 import com.github.itxiaox.adapter.listview.ViewHolder;
-import com.itxiaox.xview.R;
+import com.github.itxiaox.menu.R;
 
 import java.util.List;
 
@@ -24,13 +23,13 @@ public class PopupWindowManger {
          void onDismiss(PopupWindow popupWindow);
 
          void onItemClick(PopupWindow popupWindow, AdapterView<?> parent,
-                                View view, int position, long id);
+                          View view, int position, long id);
     }
 
     /**
      * 带箭头的下拉菜单
      */
-    public static PopupWindow showPopupWindow(Context context,
+    public static PopupWindow showPopupWindow(Context context,int width,
                                                     List<String> datas, final PopupWindowListener popupWindowListener) {
         LayoutInflater inflater = LayoutInflater.from(context);
         // 引入窗口配置文件
@@ -39,7 +38,7 @@ public class PopupWindowManger {
                 .findViewById(R.id.list_popupwindowstyle1);
         // 创建PopupWindow对象
         final PopupWindow popupWindow = new PopupWindow(view,
-                dp2px(context, 100), LayoutParams.WRAP_CONTENT,
+                width, LayoutParams.WRAP_CONTENT,
                 false);
         // 需要设置一下此参数，点击外边可消失
         popupWindow.setBackgroundDrawable(new BitmapDrawable());

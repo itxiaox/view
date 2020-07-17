@@ -5,7 +5,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewActivity"
+    tools:context=".view.ViewActivity"
     tools:ignore="MissingDefaultResource">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="开关"
+        android:onClick="switchButton"
+        />
+    <com.itxiaox.xview.webview.LoadingWebView
+        android:id="@+id/ld_web_view"
+        android:layout_width="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="300dp"/>
+    <com.itxiaox.xview.imageView.ImageTextView
+        android:id="@+id/text_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <com.itxiaox.xview.imageView.RoundAngleImageView
+        android:id="@+id/text_round_angle_image_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_banner"
+        app:roundWidth="30dp"
+        app:roundHeight="30dp"
+        app:layout_constraintStart_toEndOf="@+id/text_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
