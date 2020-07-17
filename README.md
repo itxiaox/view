@@ -8,17 +8,22 @@
 
 
 ## 使用
+
 1. 引用
 
 在根gradle中添加
+
+   
 ```
-    allprojects {
+allprojects {
     	repositories {
     		...
     		maven { url 'https://jitpack.io' }
     	}
     }
-	```
+```
+
+	
 2.在module 中添加依赖
 
 
