@@ -38,16 +38,21 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.github.itxiaox:android_utils:1.1.1'
-    implementation 'com.github.itxiaox.XView:address:0.0.1'
-//    implementation 'com.github.itxiaox.XView:xview:0.0.1'
-    implementation project(path: ':view')
+    implementation 'com.github.itxiaox.XView:adapter:0.0.2'
+//    implementation 'com.github.itxiaox.XView:address:0.0.2'
+    implementation project(path: ':address')
     implementation project(path: ':dialog')
+    implementation project(path: ':menu')
     implementation project(path: ':progressbar')
     implementation project(path: ':picker')
+//    implementation 'com.github.itxiaox.XView:dialog:0.0.2'
+//    implementation 'com.github.itxiaox.XView:progressbar:0.0.2'
+//    implementation 'com.github.itxiaox.XView:picker:0.0.2'
+//    implementation 'com.github.itxiaox.XView:view:0.0.2'
+//    implementation 'com.github.itxiaox.XView:xview:0.0.1'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
-//    implementation project(path: ":address")
-//    implementation project(path: ":xview")
 
 }

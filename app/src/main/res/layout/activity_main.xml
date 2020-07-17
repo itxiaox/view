@@ -3,13 +3,14 @@
     android:id="@+id/lay_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/tv_progressBar"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="#00ff00"
         android:layout_marginTop="10dp"
+        android:background="#00ff00"
         android:gravity="center"
         android:text="进度条" />
 
@@ -17,24 +18,26 @@
         android:id="@+id/tv_dialog"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="#00ff00"
         android:layout_marginTop="10dp"
+        android:background="#00ff00"
         android:gravity="center"
         android:text="对话框" />
+
     <TextView
         android:id="@+id/tv_input_dialog"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:layout_marginTop="10dp"
         android:background="#00ff00"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:text="输入对话框" />
+
     <TextView
         android:id="@+id/tv_select1"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="#00ff00"
         android:layout_marginTop="10dp"
+        android:background="#00ff00"
         android:gravity="center"
         android:text="选择日期" />
 
@@ -46,6 +49,7 @@
         android:background="#00ff00"
         android:gravity="center"
         android:text="选择时间" />
+
     <TextView
         android:id="@+id/tv_datetime"
         android:layout_width="match_parent"
@@ -63,6 +67,7 @@
         android:background="#00ff00"
         android:gravity="center"
         android:text="对话框地址选择" />
+
     <TextView
         android:id="@+id/tv_select34"
         android:layout_width="match_parent"
@@ -71,6 +76,7 @@
         android:background="#00ff00"
         android:gravity="center"
         android:text="picker地址选择" />
+
     <TextView
         android:id="@+id/tv_select4"
         android:layout_width="match_parent"
@@ -81,6 +87,7 @@
         android:gravity="center"
         android:paddingRight="10dp"
         android:text="下拉列表" />
+
     <TextView
         android:id="@+id/tv_select5"
         android:layout_width="match_parent"
@@ -91,6 +98,7 @@
         android:gravity="center"
         android:paddingRight="10dp"
         android:text="下拉列表2" />
+
     <TextView
         android:id="@+id/tv_select6"
         android:layout_width="match_parent"
@@ -105,8 +113,8 @@
     <RelativeLayout
         android:id="@+id/ray_droplistedit"
         android:layout_width="match_parent"
-        android:clickable="true"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:clickable="true">
 
         <TextView
             android:id="@+id/textView1"
@@ -126,10 +134,10 @@
             android:layout_alignBottom="@+id/textView1"
             android:layout_marginLeft="18dp"
             android:layout_toRightOf="@+id/textView1"
-            android:enabled="false"
             android:clickable="false"
             android:drawableRight="@drawable/xx_arrow_down"
             android:ems="10"
+            android:enabled="false"
             android:paddingRight="10dp" />
     </RelativeLayout>
 

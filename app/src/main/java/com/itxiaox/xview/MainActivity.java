@@ -7,19 +7,17 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.github.itxiaox.address.addresspicker.AddressPicker;
 import com.github.itxiaox.address.dialog.AddressDialog;
 import com.github.itxiaox.dialog.AlertDialog;
 import com.github.itxiaox.dialog.AlertInputDialog;
+import com.github.itxiaox.menu.dropdownlist.DropListEditText;
+import com.github.itxiaox.menu.dropdownlist.DropListTextView;
+import com.github.itxiaox.menu.dropdownlist.DropdownList;
 import com.github.itxiaox.picker.PickerUtils;
 import com.itxiaox.android.xutils.ui.DensityUtils;
 import com.itxiaox.xview.databinding.ActivityMainBinding;
-import com.itxiaox.xview.dropdownlist.DropListEditText;
-import com.itxiaox.xview.dropdownlist.DropListTextView;
-import com.itxiaox.xview.dropdownlist.DropdownList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,34 +36,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mainBinding.getRoot());
-//        dropdownList = new DropdownList(MainActivity.this);
-//        numberList = new ArrayList<String>();
-//        numberList.add("菜单1");
-//        numberList.add("菜单2");
-//        numberList.add("菜单3");
-//        numberList.add("菜单4");
-//        numberList.add("菜单5");
-//
-//        arr = new String[5];
-//        arr[0] = "建筑方";
-//        arr[1] = "设计方";
-//        arr[2] = "施工方";
-//        arr[3] = "咨询师";
-//        arr[4] = "其它";
-//        dropdownList.setSelectResultListener(new DropdownList.SelectResultListener() {
-//
-//            @Override
-//            public void onResult(int position) {
-//                // TODO Auto-generated method stub
-//                mainBinding.tvSelect4.setText(arr[position] + "");
-//            }
-//        });
-//
-//        numberList = new ArrayList<String>();
-//        for (int i = 0; i < 20; i++) {
-//            numberList.add("188888" + i);
-//        }
-//        dropList = new DropListEditText();
+        dropdownList = new DropdownList(MainActivity.this);
+        numberList = new ArrayList<String>();
+        numberList.add("菜单1");
+        numberList.add("菜单2");
+        numberList.add("菜单3");
+        numberList.add("菜单4");
+        numberList.add("菜单5");
+
+        arr = new String[5];
+        arr[0] = "建筑方";
+        arr[1] = "设计方";
+        arr[2] = "施工方";
+        arr[3] = "咨询师";
+        arr[4] = "其它";
+        dropdownList.setSelectResultListener(new DropdownList.SelectResultListener() {
+
+            @Override
+            public void onResult(int position) {
+                // TODO Auto-generated method stub
+                mainBinding.tvSelect4.setText(arr[position] + "");
+            }
+        });
+
+        numberList = new ArrayList<String>();
+        for (int i = 0; i < 20; i++) {
+            numberList.add("188888" + i);
+        }
+        dropList = new DropListEditText();
         event();
     }
 

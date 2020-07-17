@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- dialog的进入和退出效果 -->
+    <style name="dropdownlist" parent="android:Animation">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/xx_dialog_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/xx_dialog_exit</item>
+        <!-- 充满屏幕 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--是否半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 背景是否模糊显示 -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
