@@ -29,19 +29,22 @@ allprojects {
 
 ```
 //万能apater适配器，适配ListView/RecycleView
-implementation 'com.github.itxiaox.view:adapter:TAG'
+implementation 'com.github.itxiaox.view:adapter:Tag'
 //常用对话框
-implementation 'com.github.itxiaox.view:dialog:TAG'
+implementation 'com.github.itxiaox.view:dialog:Tag'
 //进度条
-implementation 'com.github.itxiaox.view:progressbar:TAG'
+implementation 'com.github.itxiaox.view:progressbar:Tag'
 //地址选择器
-implementation 'com.github.itxiaox.view:address:TAG'
+implementation 'com.github.itxiaox.view:address:Tag'
 //日期、时间、数据选择器
-implementation 'com.github.itxiaox.view:picker:TAG'
+implementation 'com.github.itxiaox.view:picker:Tag'
 //菜单
-implementation 'com.github.itxiaox.view:menu:TAG'
+implementation 'com.github.itxiaox.view:menu:Tag'
 //常见的自定义view
-implementation 'com.github.itxiaox.view:xview:TAG'
+implementation 'com.github.itxiaox.view:xview:Tag'
+
+//一次性引入所有的view库
+implementation 'com.github.itxiaox:view:Tag'
 
 ```
 
