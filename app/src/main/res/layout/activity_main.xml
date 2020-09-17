@@ -40,14 +40,6 @@
         android:gravity="center"
         android:text="对话框" />
 
-    <TextView
-        android:id="@+id/tv_input_dialog"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="#00ff00"
-        android:gravity="center"
-        android:text="输入对话框" />
 
     <TextView
         android:id="@+id/tv_select1"

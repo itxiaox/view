@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".menu.MenuActivity">
+    tools:context=".java.menu.MenuActivity">
     <TextView
         android:id="@+id/tv_dropdownlist_1"
         android:layout_width="match_parent"

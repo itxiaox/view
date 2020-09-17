@@ -5,4 +5,13 @@
     <color name="actionsheet_blue">#037BFF</color>
     <color name="actionsheet_red">#FD4A2E</color>
     <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="font_white">#c1bebe</color>
+    <color name="bg_dialog">#FF2E2E2E</color>
+    <!--灰色背景的时候-->
+    <color name="line_d">#FF101010</color>
+    <color name="line_b">#FF404040</color>
+    <!--黑色背景的时候-->
+    <color name="line_d2" >#151414</color>
+    <color name="line_b2" >#201f1f</color>
+
 </resources>

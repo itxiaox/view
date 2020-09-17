@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowViewActivity">
+    tools:context=".java.ShowViewActivity">
 
-<!--    <com.itxiaox.xview.view.BatteryView-->
+<!--    <com.itxiaox.xview.java.view.BatteryView-->
 <!--        android:id="@+id/bv_battery"-->
 <!--        android:layout_width="30dp"-->
 <!--        android:layout_height="20dp"-->

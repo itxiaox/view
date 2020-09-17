@@ -14,10 +14,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup"
         tools:replace="android:icon,android:label">
-        <activity android:name=".menu.MenuActivity"></activity>
-        <activity android:name=".view.ViewActivity" />
-        <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".java.DialogActivity"></activity>
+        <activity android:name=".java.menu.MenuActivity" />
+        <activity android:name=".java.view.ViewActivity" />
+        <activity android:name=".java.ProgressBarActivity" />
+        <activity android:name=".java.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.MyToggleButtonActivity" />
+        <activity android:name=".java.view.MyToggleButtonActivity" />
     </application>
 
 </manifest>

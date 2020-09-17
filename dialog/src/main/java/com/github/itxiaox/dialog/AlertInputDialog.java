@@ -25,7 +25,6 @@ public class AlertInputDialog extends BaseDialog{
 	private Button btn_neg;
 	private Button btn_pos;
 	private ImageView img_line;
-	private Display display;
 	private boolean showTitle = false;
 	private boolean showMsg = false;
 	private boolean showPosBtn = false;
@@ -38,6 +37,8 @@ public class AlertInputDialog extends BaseDialog{
 
 	public AlertInputDialog(Context context,int width,int height){
 		super(context,width,height);
+		this.width = width;
+		this.height = height;
 	}
 
 	public AlertInputDialog builder() {
