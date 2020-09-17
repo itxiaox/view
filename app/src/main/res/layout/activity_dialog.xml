@@ -45,4 +45,12 @@
         android:text="仿IOS对话框"
         app:layout_constraintStart_toEndOf="@+id/btn_dialogFragment"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度对话框"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_common" />
 </androidx.constraintlayout.widget.ConstraintLayout>

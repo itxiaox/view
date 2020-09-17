@@ -1,7 +1,9 @@
-package com.itxiaox.xview.java;
+package com.itxiaox.xview.kotlin;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.github.itxiaox.dialog.AlertDialog;
 import com.github.itxiaox.dialog.AlertInputDialog;
 import com.github.itxiaox.dialog.CommomDialog;

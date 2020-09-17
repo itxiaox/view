@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="IconPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <!--<item name="android:popupBackground">#FF0000</item>-->
+        <!--<item name="android:itemBackground">#0000FF</item>-->
+        <item name="android:textColor">@color/font_grey</item>
+        <item name="android:itemPadding">0dp</item>
+        <item name="android:listPreferredItemHeightSmall">60dp</item>
+        <item name="android:listPreferredItemPaddingEnd">0dp</item>
+    </style>
+</resources>

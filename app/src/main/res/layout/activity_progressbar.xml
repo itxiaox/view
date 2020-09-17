@@ -57,10 +57,17 @@
         app:layout_constraintTop_toBottomOf="@+id/dsb_progress" />
 
     <com.github.itxiaox.progressbar.NumberProgressBar
+        android:id="@+id/npb"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
         app:layout="@+id/circle_progress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dsb_progress" />
+
+    <com.github.itxiaox.rangeseekbar.RangeSeekBar
+        android:layout_width="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/npb"
+        android:layout_height="100dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

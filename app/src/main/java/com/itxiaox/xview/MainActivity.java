@@ -1,24 +1,20 @@
-package com.itxiaox.xview.java;
+package com.itxiaox.xview;
 //package com.itxiaox.xxview;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.itxiaox.address.addresspicker.AddressPicker;
 import com.github.itxiaox.address.dialog.AddressDialog;
-import com.github.itxiaox.dialog.AlertDialog;
-import com.github.itxiaox.dialog.AlertInputDialog;
 import com.github.itxiaox.picker.PickerUtils;
 import com.itxiaox.android.xutils.app.ContextUtils;
-import com.itxiaox.android.xutils.ui.DensityUtils;
-import com.itxiaox.android.xutils.ui.UIHelper;
 import com.itxiaox.xview.databinding.ActivityMainBinding;
+import com.itxiaox.xview.java.DialogActivity;
+import com.itxiaox.xview.java.ProgressBarActivity;
 import com.itxiaox.xview.java.menu.MenuActivity;
 import com.itxiaox.xview.java.view.ViewActivity;
 
@@ -49,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, MenuActivity.class));
         });
         mainBinding.tvDialog.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this,DialogActivity.class);
+            Intent intent = new Intent(MainActivity.this, DialogActivity.class);
             startActivity(intent);
 
         });

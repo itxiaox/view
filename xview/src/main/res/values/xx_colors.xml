@@ -24,12 +24,10 @@
     <color name="bt_grey">#dedede</color>
     <!--黑色-->
     <color name="black">#000000</color>
-
-
+    <color name="font_grey">#929292</color>
+    <color name="line_pw_divider" >#404040</color>
     <item name="gray_holo_dark" type="color">#ff464646</item>
     <item name="gray_holo_light" type="color">#ffd0d0d0</item>
-    <!-- 字体的灰色 -->
-    <color name="font_grey">#929292</color>
     <!-- 字体的红色 -->
     <color name="font_red">#ff6f60</color>
     <!-- 字体的默认黑 -->
